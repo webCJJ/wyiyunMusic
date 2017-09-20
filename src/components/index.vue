@@ -3,7 +3,7 @@
         <x-header :left-options="{showBack: false}" style="background-color: red;">
     	    <a slot="left"><i class="icon iconfont icon-caidan" style="font-size: 25px;color: #fff;"></i></a> 
     	   <ul class="title-ul">
-    	   <li>
+    	   <li> 
     	    	<i class="icon iconfont icon-yinle" style="font-size: 25px;"></i>
     	   </li>
     	   <li>
@@ -15,20 +15,18 @@
     	 </ul>
     	 <a slot="right"><i class="icon iconfont icon-sousuo" style="font-size: 25px;color: #fff;"></i></a> 
     </x-header>
-   
+       <mune></mune>
   </div>
 </template>
 
 <script>
-import Group from 'vux/src/components/group'
-import Cell from 'vux/src/components/cell'
 import XHeader from 'vux/src/components/x-header'
-
+import Mune  from 'components/pages/mune.vue'
+import { Tab, TabItem, Sticky, Divider, XButton, Swiper, SwiperItem } from 'vux'
 export default {
   components: {
-    Group,
-    Cell,
-    XHeader
+    XHeader,
+    Mune
   },
   data () {
     return {
